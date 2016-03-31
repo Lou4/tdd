@@ -1,0 +1,13 @@
+package main;
+
+public class Numbers {
+	
+	public String conversionA2R(String arabic){
+		String roman = "";
+		while(i-- > 0){
+			roman += "I";
+		}
+		
+		return roman;
+	}
+}

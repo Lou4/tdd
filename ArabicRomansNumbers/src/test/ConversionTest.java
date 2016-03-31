@@ -1,7 +1,8 @@
 package test;
 
-import java.Numbers;
 import static org.junit.Assert.assertEquals; 
+import main.Numbers;
+
 import org.junit.Test;
 
 public class ConversionTest{
@@ -13,8 +14,15 @@ public class ConversionTest{
 	
 	@Test
 	public void arabicToRomanOne(){
-		assertEquals("I", "1", num.conversionA2R("1"));
-		assertEquals("II", "2", num.conversionA2R("1"));
-		assertEquals("III", "3", num.conversionA2R("1"));
+		assertEquals("1", "I", num.conversionA2R("1"));
+		assertEquals("2", "II", num.conversionA2R("2"));
+		assertEquals("3", "III", num.conversionA2R("3"));
+	}
+	
+	@Test
+	public void arabicToRomanTwo(){
+		assertEquals("5", "V", num.conversionA2R("5"));
+		assertEquals("6", "VI", num.conversionA2R("6"));
+		assertEquals("7", "VII", num.conversionA2R("7"));
 	}
 }

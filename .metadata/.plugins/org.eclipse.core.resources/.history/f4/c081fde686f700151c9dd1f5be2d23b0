@@ -1,0 +1,21 @@
+package java;
+
+public class Numbers {
+	
+	public String conversionA2R(String arabic){
+		switch (arabic) {
+		case "I":
+			
+			return "1";
+		case "II":
+			
+			return "2";
+		case "III":
+			
+			return "3";
+
+		default:
+			return null;
+		}
+	}
+}
