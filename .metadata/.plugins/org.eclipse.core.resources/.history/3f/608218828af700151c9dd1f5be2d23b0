@@ -7,18 +7,21 @@ public class Numbers {
 	
 	
 	public String conversionA2R(String arabic){
-		int curr = romansValue.length-1;
+		int curr = romansValue.length;
 		String roman = "";
 		int a = Integer.parseInt(arabic);
+		System.out.println("a: " + a + " curr: " + curr);
 		
 		while(curr >= 0){
 				
 			while(arabicValue[curr] <= a){
 				roman += romansValue[curr];
 				a -= arabicValue[curr];
+				System.out.println("a: " + a);
 			}
 			curr--;
 		}
+		System.out.println("roman: " + roman);
 		return roman;
 	}
 }

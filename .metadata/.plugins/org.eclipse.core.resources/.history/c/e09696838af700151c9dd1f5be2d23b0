@@ -7,7 +7,7 @@ public class Numbers {
 	
 	
 	public String conversionA2R(String arabic){
-		int curr = romansValue.length-1;
+		int curr = romansValue.length;
 		String roman = "";
 		int a = Integer.parseInt(arabic);
 		
@@ -19,6 +19,7 @@ public class Numbers {
 			}
 			curr--;
 		}
+		System.out.println("roman: " + roman);
 		return roman;
 	}
 }

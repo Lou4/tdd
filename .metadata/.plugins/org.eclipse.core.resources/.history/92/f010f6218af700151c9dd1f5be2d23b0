@@ -4,16 +4,15 @@ public class Numbers {
 	
 	private String[] romansValue = {"I", "V"};
 	private int[] arabicValue = {1, 5};
-	
+	private int curr = 1;
 	
 	public String conversionA2R(String arabic){
-		int curr = romansValue.length-1;
 		String roman = "";
 		int a = Integer.parseInt(arabic);
 		
 		while(curr >= 0){
-				
 			while(arabicValue[curr] <= a){
+				System.out.println("f");
 				roman += romansValue[curr];
 				a -= arabicValue[curr];
 			}
