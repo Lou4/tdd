@@ -1,0 +1,18 @@
+package test;
+
+import java.Numbers;
+
+import org.junit.Test;
+
+public class ConversionTest{
+
+	private Numbers num;
+	public ConversionTest() {
+		num = new Numbers();
+	}
+	
+	@Test
+	public void arabicToRomanOne(){
+		assertEquals("I", "1", num.conversionA2R(1));
+	}
+}
