@@ -220,3 +220,11 @@
 2016-03-31 23:50:49,806 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lou/Desktop/universita/magistrale/progettazioneDelSoftware/eclipseTDD/ArabicRomansNumbers/src/main/resources
 2016-03-31 23:50:49,807 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-03-31 23:50:49,808 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lou/Desktop/universita/magistrale/progettazioneDelSoftware/eclipseTDD/ArabicRomansNumbers/src/test/resources
+2016-03-31 23:52:14,329 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 23:52:14,330 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lou/Desktop/universita/magistrale/progettazioneDelSoftware/eclipseTDD/ArabicRomansNumbers/src/main/resources
+2016-03-31 23:52:14,332 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 23:52:14,333 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lou/Desktop/universita/magistrale/progettazioneDelSoftware/eclipseTDD/ArabicRomansNumbers/src/test/resources
+2016-03-31 23:52:22,118 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 23:52:22,120 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lou/Desktop/universita/magistrale/progettazioneDelSoftware/eclipseTDD/ArabicRomansNumbers/src/main/resources
+2016-03-31 23:52:22,121 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 23:52:22,122 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lou/Desktop/universita/magistrale/progettazioneDelSoftware/eclipseTDD/ArabicRomansNumbers/src/test/resources
