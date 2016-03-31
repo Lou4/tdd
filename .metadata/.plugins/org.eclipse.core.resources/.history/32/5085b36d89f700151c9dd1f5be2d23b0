@@ -11,9 +11,9 @@ public class Numbers {
 		String roman = "";
 		int a = Integer.parseInt(arabic);
 		
-		while(arabicValue[curr] <= a){
+		while(arabicValue[curr] < a){
 			roman += romansValue[curr];
-			a -= arabicValue[curr];
+			a -= romansValue[curr];
 		}
 		
 		return roman;
