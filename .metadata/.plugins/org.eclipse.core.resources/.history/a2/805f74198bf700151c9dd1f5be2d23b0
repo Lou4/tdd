@@ -35,7 +35,7 @@ public class ConversionTest{
 	}
 	
 	@Test
-	public void arabicToRomanFour(){
+	public void arabicToRomanThree(){
 		assertEquals("4", "IV", num.conversionA2R("4"));
 		assertEquals("9", "IX", num.conversionA2R("9"));
 		assertEquals("14", "XIV", num.conversionA2R("14"));

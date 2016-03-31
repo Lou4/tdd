@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ConversionTest" project="ArabicRomansNumbers" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="test.ConversionTest" time="0.0">
+    <testcase name="arabicToRomanOne" classname="test.ConversionTest" time="0.0"/>
+    <testcase name="arabicToRomanTwo" classname="test.ConversionTest" time="0.0"/>
+    <testcase name="arabicToRomanThree" classname="test.ConversionTest" time="0.0"/>
+  </testsuite>
+</testrun>

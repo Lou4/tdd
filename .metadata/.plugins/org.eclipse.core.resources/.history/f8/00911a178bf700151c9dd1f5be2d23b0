@@ -33,11 +33,4 @@ public class ConversionTest{
 		assertEquals("12", "XII", num.conversionA2R("12"));
 		assertEquals("16", "XVI", num.conversionA2R("16"));
 	}
-	
-	@Test
-	public void arabicToRomanFour(){
-		assertEquals("4", "IV", num.conversionA2R("4"));
-		assertEquals("9", "IX", num.conversionA2R("9"));
-		assertEquals("14", "XIV", num.conversionA2R("14"));
-	}
 }
