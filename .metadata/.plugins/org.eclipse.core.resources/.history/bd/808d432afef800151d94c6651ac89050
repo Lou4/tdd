@@ -1,0 +1,15 @@
+package com.utils;
+
+public class MyStringUtils {
+
+	/* AACD -> CD, CACD -> CCD*/
+	public String truncateFirstTwoPos(String str) {
+		String tmp = "";
+		int limit = str.length() > 2 ? 2 : str.length();
+		for(int i = 0; i<limit; i++){
+			if(str.charAt(i) != 'A') tmp += str.charAt(i);
+		}
+		return tmp + str.substring(2);
+	}
+
+}

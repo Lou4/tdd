@@ -1,0 +1,13 @@
+package com.utils;
+
+public class MyStringUtils {
+
+	/* AACD -> CD, CACD -> CCD*/
+	public String truncateFirstTwoPos(String str) {
+		for(char c: str){
+			
+		}
+		return null;
+	}
+
+}

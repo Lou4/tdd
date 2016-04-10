@@ -1,0 +1,25 @@
+package com.utils;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class MyStringUtilsTest {
+
+	MyStringUtils msu; 
+	
+	@Before
+	public void init(){
+		msu = new MyStringUtils();  
+	}
+	
+	@Test
+	public void test() {
+		assertEquals("AACD", "CD", msu.truncateFirstTwoPos("AACD"));
+		assertEquals("ACD", "CD", msu.truncateFirstTwoPos("AACD"));
+		assertEquals("DACD", "DCD", msu.truncateFirstTwoPos("AACD"));
+		assertEquals("A", "", msu.truncateFirstTwoPos("AACD"));
+	}
+
+}

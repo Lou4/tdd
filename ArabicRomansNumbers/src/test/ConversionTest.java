@@ -3,12 +3,15 @@ package test;
 import static org.junit.Assert.assertEquals; 
 import main.Numbers;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class ConversionTest{
 
-	private Numbers num;
-	public ConversionTest() {
+	private static Numbers num;
+
+	@BeforeClass
+	public static void initObj(){
 		num = new Numbers();
 	}
 	
@@ -39,5 +42,10 @@ public class ConversionTest{
 		assertEquals("4", "IV", num.conversionA2R("4"));
 		assertEquals("9", "IX", num.conversionA2R("9"));
 		assertEquals("14", "XIV", num.conversionA2R("14"));
+	}
+	
+	@Test
+	public void arabicToRomanFive(){
+		assertEquals("50", "L", num.conversionA2R("50"));
 	}
 }

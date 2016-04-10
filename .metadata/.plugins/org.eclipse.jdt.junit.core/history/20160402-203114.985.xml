@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyStringUtilsTest" project="UdemyJUnit" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.utils.MyStringUtilsTest" time="0.001">
+    <testcase name="testTruncateFirst2Pos_AinFirstChar" classname="com.utils.MyStringUtilsTest" time="0.001"/>
+    <testcase name="testTruncateFirst2Pos_EmptyString" classname="com.utils.MyStringUtilsTest" time="0.0"/>
+    <testcase name="testTruncateFirst2Pos_AsecondChar" classname="com.utils.MyStringUtilsTest" time="0.0"/>
+  </testsuite>
+</testrun>

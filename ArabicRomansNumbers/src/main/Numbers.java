@@ -2,8 +2,8 @@ package main;
 
 public class Numbers {
 	
-	private String[] romansValue = {"I", "V", "X"};
-	private int[] arabicValue = {1, 5, 10};
+	private String[] romansValue = {"I", "IV", "V", "IX", "X"};
+	private int[] arabicValue = {1, 4, 5, 9, 10};
 	
 	
 	public String conversionA2R(String arabic){
