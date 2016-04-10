@@ -31,13 +31,5 @@ public class MyStringUtilsTest {
 	public void testTruncateFirst2Pos_EmptyString(){
 		assertEquals("", "", msu.truncateFirstTwoPos(""));
 	}
-	
-	
-	@Test
-	public void testAreFirst2CharAndLast2TheSame_(){
-		assertEquals(true, msu.areFirst2CharAndLast2TheSame("ABAB"));
-		assertEquals(false, msu.areFirst2CharAndLast2TheSame("ABCD"));
-		assertEquals(false, msu.areFirst2CharAndLast2TheSame("ABBA"));
-	}
 
 }

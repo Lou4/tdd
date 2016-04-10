@@ -13,10 +13,5 @@ public class MyStringUtils {
 		}
 		return tmp;
 	}
-	
-	/* ABCD => false, ABAB => true*/
-	public Boolean areFirst2CharAndLast2TheSame(String str){
-		return null;
-	}
 
 }
