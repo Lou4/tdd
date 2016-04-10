@@ -16,7 +16,10 @@ public class MyStringUtils {
 	
 	/* ABCD => false, ABAB => true*/
 	public Boolean areFirst2CharAndLast2TheSame(String str){
-		return null;
+		if(str.length() < 2) throw new IllegalArgumentException("String must be at least 4 chars length");
+		
+		int strLen = str.length();
+		return str.subSequence(0, 2).equals(str.subSequence(strLen-2, strLen));
 	}
 
 }

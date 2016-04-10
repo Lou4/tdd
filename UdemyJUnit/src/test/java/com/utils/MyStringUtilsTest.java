@@ -34,10 +34,19 @@ public class MyStringUtilsTest {
 	
 	
 	@Test
-	public void testAreFirst2CharAndLast2TheSame_(){
-		assertEquals(true, msu.areFirst2CharAndLast2TheSame("ABAB"));
-		assertEquals(false, msu.areFirst2CharAndLast2TheSame("ABCD"));
-		assertEquals(false, msu.areFirst2CharAndLast2TheSame("ABBA"));
+	public void testAreFirst2CharAndLast2TheSame_MoreThen2Char(){
+		assertTrue(msu.areFirst2CharAndLast2TheSame("ABAB"));
+		assertTrue(msu.areFirst2CharAndLast2TheSame("BBB"));
+		assertTrue(msu.areFirst2CharAndLast2TheSame("AB"));
+		assertFalse(msu.areFirst2CharAndLast2TheSame("ABCD"));
+		assertFalse(msu.areFirst2CharAndLast2TheSame("ABBA"));
+		assertFalse(msu.areFirst2CharAndLast2TheSame("ABB"));
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testAreFirst2CharAndLast2TheSame_LessThen2Char(){
+		msu.areFirst2CharAndLast2TheSame("A");
+		msu.areFirst2CharAndLast2TheSame("");
 	}
 
 }
