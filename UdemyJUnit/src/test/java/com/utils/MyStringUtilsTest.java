@@ -72,7 +72,7 @@ public class MyStringUtilsTest {
 	public void testIsPalindrome_NegativeScenario(){
 		assertFalse("String computate ad palindrome but it isn't", msu.isPalindrome("OTTI"));
 		assertFalse(msu.isPalindrome("OTT"));
-		assertFalse(msu.isPalindrome("OT"));
+		assertFalse(msu.isPalindrome("OT")); 
 	}
 
 	
