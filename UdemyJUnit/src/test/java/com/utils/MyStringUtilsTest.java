@@ -75,5 +75,13 @@ public class MyStringUtilsTest {
 		assertFalse(msu.isPalindrome("OT")); 
 	}
 
+	@Test
+	public void testIsPalindrome_PositiveScenario(){
+		assertTrue(msu.isPalindrome("OTTO"));
+		assertTrue(msu.isPalindrome("OTO"));
+		assertTrue(msu.isPalindrome("OO"));
+		assertTrue(msu.isPalindrome("O"));
+		assertTrue(msu.isPalindrome(""));
+	}
 	
 }
