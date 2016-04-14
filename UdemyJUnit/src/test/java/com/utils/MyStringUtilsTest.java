@@ -2,16 +2,31 @@ package com.utils;
 
 import static org.junit.Assert.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 public class MyStringUtilsTest {
 
-	MyStringUtils msu; 
+	private MyStringUtils msu; 
+	private int countInstance;
+	
+	public MyStringUtilsTest() {
+		System.out.println("Initialize constructor");
+		countInstance = 0;
+	}
 	
 	@Before
-	public void init(){
+	public void setup(){
+		System.out.println("set up instance " + ++countInstance);
 		msu = new MyStringUtils();  
+		
+	}
+	
+	@After
+	public void clear(){
+		System.out.println("clear memory");
+		msu = null;
 	}
 	
 	@Test
@@ -23,7 +38,7 @@ public class MyStringUtilsTest {
 	}
 	
 	@Test
-	public void testTruncateFirst2Pos_AsecondChar(){
+	public void testTruncateFirst2Pos_AsecondChar(){ 
 		assertEquals("DACD", "DCD", msu.truncateFirstTwoPos("DACD"));
 	}
 	
@@ -52,5 +67,13 @@ public class MyStringUtilsTest {
 		msu.areFirst2CharAndLast2TheSame("A");
 		msu.areFirst2CharAndLast2TheSame("");
 	}
+	
+	@Test
+	public void testIsPalindrome_NegativeScenario(){
+		assertFalse(msu.isPalindrome("OTTI"));
+		assertFalse(msu.isPalindrome("OTT"));
+		assertFalse(msu.isPalindrome("OT"));
+	}
 
+	
 }
