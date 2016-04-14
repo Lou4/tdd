@@ -1,5 +1,8 @@
 package com.utils;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MyStringUtils {
 
 	/* AACD -> CD, CACD -> CCD*/
@@ -24,6 +27,11 @@ public class MyStringUtils {
 
 	/* OTTO => true */
 	public boolean isPalindrome(String string) {
+		
+		for(int i = string.length()-1, j = 0; i>=0; i--, j++){
+			if(string.charAt(i) != string.charAt(j)) return false;
+		}
+		
 		return true;
 	}
 
