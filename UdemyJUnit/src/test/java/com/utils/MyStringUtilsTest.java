@@ -92,6 +92,7 @@ public class MyStringUtilsTest {
 		assertTrue(msu.isPalindrome(""));
 		assertTrue(msu.isPalindrome("AI lati d Italia"));
 		assertTrue(msu.isPalindrome("Rise to vote Sir"));
+		assertTrue(msu.isPalindrome("Rise to vo  te Sir"));
 	}
 	
 	@Test

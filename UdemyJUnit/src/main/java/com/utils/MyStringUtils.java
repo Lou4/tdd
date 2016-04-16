@@ -27,6 +27,8 @@ public class MyStringUtils {
 
 	/* OTTO => true */
 	public boolean isPalindrome(String string) {
+		if(string == null) return false;
+		
 		string  = string.toLowerCase();
 		
 		for(int i = string.length()-1, j = 0; i>=j; i--, j++){
