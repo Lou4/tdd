@@ -3,29 +3,32 @@ package com.utils;
 import static org.junit.Assert.*;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class MyStringUtilsTest {
 
 	private MyStringUtils msu; 
-	private int countInstance;
 	
-	public MyStringUtilsTest() {
-		System.out.println("Initialize constructor");
-		countInstance = 0;
+	@BeforeClass
+	public static void start(){
+		System.out.println("- - - TESTS BEGIN - - -");
+	}
+	
+	@AfterClass
+	public static void end(){
+		System.out.println("- - - TESTS END - - -");
 	}
 	
 	@Before
 	public void setup(){
-		System.out.println("set up instance " + ++countInstance);
 		msu = new MyStringUtils();  
-		
 	}
 	
 	@After
 	public void clear(){
-		System.out.println("clear memory");
 		msu = null;
 	}
 	
@@ -72,21 +75,27 @@ public class MyStringUtilsTest {
 	public void testIsPalindrome_NegativeScenario(){
 		assertFalse("String computate ad palindrome but it isn't", msu.isPalindrome("OTTI"));
 		assertFalse(msu.isPalindrome("OTT"));
-		assertFalse(msu.isPalindrome("OT")); 
+		assertFalse(msu.isPalindrome("OT"));
+		assertFalse(msu.isPalindrome("Rise to vote Sir!"));
+		assertFalse(msu.isPalindrome("OTT,O"));
+		
 	}
 
 	@Test
 	public void testIsPalindrome_PositiveScenario(){
 		assertTrue(msu.isPalindrome("OTtO"));
 		assertTrue(msu.isPalindrome("OTTO"));
+		assertTrue(msu.isPalindrome("O TT   O"));
 		assertTrue(msu.isPalindrome("OTO"));
 		assertTrue(msu.isPalindrome("OO"));
 		assertTrue(msu.isPalindrome("O"));
 		assertTrue(msu.isPalindrome(""));
 		assertTrue(msu.isPalindrome("AI lati d Italia"));
 		assertTrue(msu.isPalindrome("Rise to vote Sir"));
-		
-		
 	}
 	
+	@Test
+	public void testIsPalindrome_nullString(){
+		assertFalse(msu.isPalindrome(null));
+	}
 }

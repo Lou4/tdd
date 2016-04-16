@@ -29,9 +29,9 @@ public class MyStringUtils {
 	public boolean isPalindrome(String string) {
 		string  = string.toLowerCase();
 		
-		for(int i = string.length()-1, j = 0; i>=0; i--, j++){
-			if(string.charAt(i) == ' ') i--;
-			if(string.charAt(j) == ' ') j++;
+		for(int i = string.length()-1, j = 0; i>=j; i--, j++){
+			while(string.charAt(i) == ' ') i--;
+			while(string.charAt(j) == ' ') j++;
 			if(string.charAt(i) != string.charAt(j)) return false;
 		}
 		return true;
