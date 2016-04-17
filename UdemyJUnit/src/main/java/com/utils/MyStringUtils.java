@@ -1,8 +1,5 @@
 package com.utils;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class MyStringUtils {
 
 	/* AACD -> CD, CACD -> CCD*/
