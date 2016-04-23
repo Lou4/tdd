@@ -1,0 +1,10 @@
+git reset --soft HEAD^
+Elimina l'ulitmo commit fatto ma lascia i file che ho aggiunto negli indexes.
+
+git reset HEAD^
+Elimina sia l'ultimo commit fatto sia i file aggiunti agli indexes ma lascia intatto il
+workspace. Tutto è come era subito prima di fare l'ultimo git add.
+
+git reset --hard HEAD^
+Elimina l'ultimo commit, toglie i file dagli indexes e mi riporta la situazione del
+mio workspace a quella che era subito dopo l'ultimo push (credo ultimo push).
